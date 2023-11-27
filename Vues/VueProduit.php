@@ -42,12 +42,11 @@ echo"<div id='galery'>";
                 echo "<li><i class='bx bxs-star'></i></li>";
             }
             echo '</ul>';
-            echo '<button class="buy-1">Acheter</button>';
+            echo '<form method="get">';
+            echo '<input type="hidden" name="id_produit" value="' . $value['id_produit'] . '">';
+            echo '<input type="submit" class="buy-1" value="Acheter" name="ajouter"></input>';
+            echo '</form>';
             
-            // echo '<form method="get">';
-            // echo '<input type="hidden" name="id_produit" value="' . $produits['id_produit'] . '">';
-            // echo '<input type="submit" value="Ajouter" name="ajouter"></input>';
-            // echo '</form></div>';
             echo '</div>';
             }
             
