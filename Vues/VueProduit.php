@@ -30,12 +30,11 @@ echo"<div id='galery'>";
             foreach ($produit as $key => $value) {
                 // echo '<p>'.$value.'</p>';
                         // echo '<p>'.$user.'</p>';
-                        echo '<div class="content-card">';
-            echo '<img src="./Images/shoes1.png">';
-            echo '<h3>'.$value["nom_produit"].'</h3>';
-            echo'<br>';
-            echo '<p>'.$value["description_produit"].'</p>';
-            echo'<br>';
+            echo '<div class="content-card">';
+            
+            echo '<div class="taille-img"><img src="../image/' . $value['img_produit'] . '" height="160px"></div>';
+            echo '<div class="titre"><h3>'.$value["nom_produit"].'</h3></div>';            
+            echo '<div class="text"><p>'.$value["description_produit"].'</p></div>';    
             echo '<h6>'.$value["prix_produit"].'€</h6>';
             echo '<ul class="etoile">';
             for ($i = 0; $i < 5; $i++) {
@@ -44,7 +43,7 @@ echo"<div id='galery'>";
             echo '</ul>';
             echo '<form method="get">';
             echo '<input type="hidden" name="id_produit" value="' . $value['id_produit'] . '">';
-            echo '<input type="submit" class="buy-1" value="Acheter" name="ajouter"></input>';
+            echo '<div class="boutonfaitchierceboutondemerde"><input type="submit" class="buy-1" value="Acheter" name="ajouter"></input></div>';
             echo '</form>';
             
             echo '</div>';
