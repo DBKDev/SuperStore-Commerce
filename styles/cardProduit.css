@@ -29,7 +29,6 @@ body{
     margin: 15px;
     min-width: 300px;
     box-sizing: border-box;
-    /* float: left; */
     text-align: center;
     border-radius: 20px;
     cursor: pointer;
@@ -37,23 +36,24 @@ body{
     box-shadow: 0 14px 18px rgba(0, 0, 0, 0.25),
     0 10px 10px rgba(0, 0, 0, 0.22);
     transition: .4s ;
-    background: #f2f2f2;
+    background: #f2f2f2;    
 } 
 
 .content-card:hover{
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
     0 3px 6px rgba(0, 0, 0, 0.23);
-    /* transform: translate(0px, +8px) ; */
+    transform: translate(0px, +8px) ;
 }
-.content-card img{
-    width: 200px;
-    height: 200px;
+.content-card img{        
+    max-width: 200px;
+    max-height: 200px;
     text-align: center;
     margin: 0 auto;
     display: block;
 }
 .content-card p{
     text-align: center;
+    max-height: 25px;
     color: #b2bec3;
     padding-top: 0 8px;
 }
@@ -87,6 +87,7 @@ body{
     transition: .6s;
 }
 .content-card input[type='submit']{
+    
     text-align: center;
     font-size: 24px;
     color: #fff;
@@ -100,7 +101,7 @@ body{
     border-bottom-left-radius: 20px;
 }
 .buy-1{
-    background: #2183a2;
+    background: #2183a2;    
 }
 
 .buy-1:hover{
@@ -112,4 +113,20 @@ body{
 
 .buy-2:hover{
     background: #e48d3c;
+}
+/* 
+.taille-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;  
+    width: 200px;
+} */
+
+.text{
+    height: 60px;
+}
+
+.titre{
+    height: 100px;
 }
