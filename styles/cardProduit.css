@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #EEEEEE;
+}
+#galery{    
+    display: flex;    
+    flex-flow: row wrap;
+    width: 100%;    
+    justify-content: center;
+    align-items: flex-start;
+    margin: 50px 0;
+    height: auto;
+}
+
+.content-card h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.content-card a{
+    text-decoration: none;
+}
+
+.content-card{
+    width: 10%;
+    margin: 15px;
+    min-width: 300px;
+    box-sizing: border-box;
+    /* float: left; */
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 18px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .4s ;
+    background: #f2f2f2;
+} 
+
+.content-card:hover{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+    /* transform: translate(0px, +8px) ; */
+}
+.content-card img{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.content-card p{
+    text-align: center;
+    color: #b2bec3;
+    padding-top: 0 8px;
+}
+.content-card h6{
+    font-size: 26px;
+    text-align: center;
+    color: #222f3e;
+    margin: 0;
+}
+.content-card ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-top: 0px;
+    justify-content: center;
+    
+}
+.content-card ul li{
+    padding-top: 5px;
+}
+.bx{
+    font-size: 26px;
+    transition: 0.4s;
+    margin: 3px; 
+}
+.bxs-star{
+    color: #ff9f43;
+}
+.bx:hover{
+    transform: scale(1.3);
+    transition: .6s;
+}
+.content-card button{
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.buy-1{
+    background: #2183a2;
+}
+
+.buy-1:hover{
+    background: #1a6981;
+}
+.buy-2{
+    background: #ff9f43;
+}
+
+.buy-2:hover{
+    background: #e48d3c;
+}
